@@ -18,12 +18,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
           href="#education"
           className="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 hover:from-orange-500 hover:via-pink-500 hover:to-purple-500 transition-colors font-semibold"
         >
-          Education
-        </a>
-        <a
-          href="#skills"
-          className="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 hover:from-orange-500 hover:via-pink-500 hover:to-purple-500 transition-colors font-semibold"
-        >
+          
           Skills
         </a>
         <a
