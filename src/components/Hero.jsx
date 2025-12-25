@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen bg-white flex flex-col justify-center items-center relative px-6 py-20">
+    <section className="min-h-screen bg-black flex flex-col justify-center items-center relative px-6 py-20">
       {/* Photo */}
       <div className="mb-10">
         <img
@@ -17,16 +17,16 @@ const Hero = () => {
       {/* Text Content */}
       <div className="text-center space-y-6">
        <h1 className="text-4xl sm:text-5xl font-bold">
-  <span className="text-black">Hi, I'm </span>
+  <span className="text-white">Hi, I'm </span>
   <span className="bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400 bg-clip-text text-transparent">
     Rajeshwari Vyas
   </span>
 </h1>
 
-        <p className="text-lg sm:text-xl text-black">
+        <p className="text-lg sm:text-xl text-white">
           Full-stack Developer • AI & IoT
         </p>
-        <p className="text-md sm:text-lg text-black max-w-xl mx-auto">
+        <p className="text-md sm:text-lg text-white max-w-xl mx-auto">
           Building efficient, scalable, and AI-driven applications
         </p>
 
