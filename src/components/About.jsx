@@ -11,7 +11,7 @@ export default function About() {
       {/* Left: Education Box */}
       <div className="md:w-1/2 w-full flex justify-center mb-10 md:mb-0 md:justify-end md:pr-10">
         <div className="bg-white shadow-lg rounded-xl p-8 w-full max-w-md">
-          <h2 className="text-2xl font-bold mb-4 text-black">
+          <h2 className="text-2xl font-bold mb-4 text-purple-600">
             Education
           </h2>
           <div className="space-y-2">
