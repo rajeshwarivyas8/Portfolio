@@ -19,13 +19,13 @@ const Hero = () => {
       {/* Text Content */}
       <div className="text-center space-y-6">
        <h1 className="text-4xl sm:text-5xl font-bold">
-  <span className="text-white">Hi, I'm </span>
+  <span className="text-black">Hi, I'm </span>
   <span className="bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400 bg-clip-text text-transparent">
     Rajeshwari Vyas
   </span>
 </h1>
 
-        <p className="text-lg sm:text-xl text-white">
+        <p className="text-lg sm:text-xl text-black">
           Full-stack Developer • AI & IoT
         </p>
         <p className="text-md sm:text-lg text-white max-w-xl mx-auto">
