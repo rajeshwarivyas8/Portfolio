@@ -26,9 +26,9 @@ const Hero = () => {
 </h1>
 
         <p className="text-lg sm:text-xl text-black">
-          Full-stack Developer • AI & IoT
+          Software Developer • AI & IoT
         </p>
-        <p className="text-md sm:text-lg text-white max-w-xl mx-auto">
+        <p className="text-md sm:text-lg text-black max-w-xl mx-auto">
           Building efficient, scalable, and AI-driven applications
         </p>
 
