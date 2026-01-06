@@ -52,7 +52,7 @@ const Hero = () => {
         {/* Social Icons */}
         <div className="flex justify-center gap-6 mt-6 text-gray-700">
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/rajeshwarivyas8"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-purple-500 transition-colors text-2xl"
@@ -60,7 +60,7 @@ const Hero = () => {
             <FaGithub />
           </a>
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://www.linkedin.com/in/rajeshwarivyas/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-purple-500 transition-colors text-2xl"
