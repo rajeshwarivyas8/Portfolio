@@ -11,12 +11,12 @@ export default function Navbar() {
         {/* Center: LinkedIn */}
         <div className="flex justify-center items-center gap-10 font-medium">
           <a
-            href="https://www.linkedin.com/in/YOUR_LINKEDIN_ID"
+            href="https://www.linkedin.com/in/rajeshwarivyas/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white hover:text-cyan-400 active:text-teal-400 transition-colors duration-300"
           >
-            LinkedIn
+            https://www.linkedin.com/in/rajeshwarivyas/
           </a>
         </div>
 
