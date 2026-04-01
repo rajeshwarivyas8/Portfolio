@@ -1,12 +1,10 @@
-import React from "react";
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaWhatsapp, FaLinkedin, FaGithub } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
-const Hero = () => {
+export default function Hero() {
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center relative px-6 py-20 animated-bg">
 
-
-      
+<section className="min-h-screen bg-black text-white flex items-center px-10 relative">
 
 {/* Social Left Bar */}
 
@@ -53,73 +51,58 @@ className="text-red-400 hover:scale-125 hover:drop-shadow-[0_0_8px_#f87171] tran
 </div>
 
 
+{/* Hero Content */}
+
+<div className="max-w-5xl">
+
+<h1 className="text-5xl md:text-6xl font-bold leading-tight">
+
+Hi, I'm  
+<span className="text-cyan-400"> Rajeshwari Vyas</span>
+
+</h1>
+
+<p className="mt-6 text-xl text-gray-300">
+
+IoT Engineer | Data Analyst | Software Developer
+
+</p>
+
+<p className="mt-4 text-gray-400 max-w-2xl">
+
+Passionate about building AI solutions, data dashboards,
+and scalable applications.
+
+</p>
 
 
+{/* Buttons */}
 
-      {/* Heading */}
-      <h1 className="text-4xl sm:text-5xl font-bold text-center">
-        <span className="text-cyan-400">Hello 👋 I'm </span>
-        <span className="text-white hover:text-cyan-400 transition-colors duration-300 cursor-pointer">
-          Rajeshwari Vyas
-        </span>
-      </h1>
+<div className="mt-8 flex gap-5">
 
-      <h3 className="text-lg sm:text-xl text-center mt-2 text-white">
-         Software Developer | AI & IoT Enthusiast
-      </h3>
+<a
+href="/resume.pdf"
+className="bg-cyan-400 text-black px-8 py-3 rounded-full font-medium hover:bg-cyan-300 transition"
+>
 
-      {/* Typing SVG */}
-      <p className="mt-4">
-        <img
-          src="https://readme-typing-svg.herokuapp.com?color=36BCF7&center=true&vCenter=true&width=520&lines=Full-Stack+Development;AI+%26+IoT+Enthusiast;Building+Scalable+Software+Solutions"
-          alt="Typing effect"
-        />
-      </p>
+Download Resume
 
-      {/* Buttons */}
-      <div className="flex flex-col sm:flex-row justify-center gap-4 mt-6">
-        <a
-          href="/assets/Rajeshwari_Resume.pdf"
-          download
-          className="px-6 py-3 bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-blue-500 hover:to-cyan-400 text-white font-semibold rounded-md transition-colors duration-300"
-        >
-          Download Resume
-        </a>
-        <a
-          href="#contact"
-          className="px-6 py-3 bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-blue-500 hover:to-cyan-400 text-white font-semibold rounded-md transition-colors duration-300"
-        >
-          Hire Me
-        </a>
-      </div>
+</a>
 
-      {/* Social Icons */}
-      <div className="flex justify-center gap-6 mt-6 text-white">
-        <a
-          href="https://github.com/rajeshwarivyas8"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-cyan-400 transition-colors text-2xl"
-        >
-          <FaGithub />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/rajeshwarivyas/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-cyan-400 transition-colors text-2xl"
-        >
-          <FaLinkedin />
-        </a>
-        <a
-          href="mailto:rajeshwarivyas317@gmail.com"
-          className="hover:text-cyan-400 transition-colors text-2xl"
-        >
-          <FaEnvelope />
-        </a>
-      </div>
-    </section>
+<a
+href="#contact"
+className="border border-cyan-400 text-cyan-400 px-8 py-3 rounded-full hover:bg-cyan-400 hover:text-black transition"
+>
+
+Hire Me
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
   );
-};
-
-export default Hero;
+}
