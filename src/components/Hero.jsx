@@ -51,25 +51,43 @@ className="text-red-400 hover:scale-125 hover:drop-shadow-[0_0_8px_#f87171] tran
 </div>
 
 
+{/* Hero Text Content */}
+
+<div className="md:ml-24 lg:ml-32">
+
 {/* Heading */}
-      <h1 className="text-4xl sm:text-5xl font-bold text-center">
-        <span className="text-cyan-400">Hi 👋 I'm </span>
-        <span className="text-white hover:text-cyan-400 transition-colors duration-300 cursor-pointer">
-          Rajeshwari Vyas
-        </span>
-      </h1>
+<h1 className="text-4xl sm:text-5xl font-bold text-center md:text-left">
 
-      <h3 className="text-lg sm:text-xl text-center mt-2 text-white">
-        MERN-Stack Software Developer | AI & IoT Enthusiast
-      </h3>
+<span className="text-cyan-400">
+Hi 👋 I'm 
+</span>
 
-      {/* Typing SVG */}
-      <p className="mt-4">
-        <img
-          src="https://readme-typing-svg.herokuapp.com?color=36BCF7&center=true&vCenter=true&width=520&lines=Full-Stack+Development;AI+%26+IoT+Enthusiast;Building+Scalable+Software+Solutions"
-          alt="Typing effect"
-        />
-      </p>
+<span className="text-white hover:text-cyan-400 transition-colors duration-300 cursor-pointer ml-2">
+Rajeshwari Vyas
+</span>
+
+</h1>
+
+
+<h3 className="text-lg sm:text-xl mt-2 text-white text-center md:text-left">
+
+MERN-Stack Software Developer | AI & IoT Enthusiast
+
+</h3>
+
+
+{/* Typing SVG */}
+
+<p className="mt-4 flex justify-center md:justify-start">
+
+<img
+src="https://readme-typing-svg.herokuapp.com?color=36BCF7&center=true&vCenter=true&width=520&lines=Full-Stack+Development;AI+%26+IoT+Enthusiast;Building+Scalable+Software+Solutions"
+alt="Typing effect"
+/>
+
+</p>
+
+</div>
 
 
 {/* Buttons */}
