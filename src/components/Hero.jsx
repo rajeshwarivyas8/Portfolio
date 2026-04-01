@@ -16,7 +16,7 @@ target="_blank"
 rel="noopener noreferrer"
 className="text-green-500 hover:scale-125 hover:drop-shadow-[0_0_8px_#22c55e] transition duration-300"
 >
-<FaWhatsapp size={26}/>
+<FaWhatsapp size={30}/>
 </a>
 
 <a 
