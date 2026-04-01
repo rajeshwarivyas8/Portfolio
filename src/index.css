@@ -4,9 +4,7 @@
 
 
 body {
-  background-color: #F9F9F9; /* or white */
-}
-
-html {
+  background-color: #020617; /* dark navy, premium look */
+  color: #eae5ec; /* light grey text */
   scroll-behavior: smooth;
 }
