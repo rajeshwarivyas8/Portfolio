@@ -20,18 +20,27 @@ export default function Navbar() {
           </a>
         </div>
 
-        {/* Right: Extra links (optional) */}
+        {/* Right: Navbar Links */}
         <div className="flex items-center gap-6 font-medium">
-          <a
-            href="#projects"
-            className="text-white hover:text-cyan-400 active:text-teal-400 transition-colors duration-300"
-          >
+          <a href="#home" className="text-white hover:text-cyan-400 active:text-teal-400 transition-colors duration-300">
+            Home
+          </a>
+          <a href="#about" className="text-white hover:text-cyan-400 active:text-teal-400 transition-colors duration-300">
+            About
+          </a>
+          <a href="#education" className="text-white hover:text-cyan-400 active:text-teal-400 transition-colors duration-300">
+            Skills
+          </a>
+          <a href="#experience" className="text-white hover:text-cyan-400 active:text-teal-400 transition-colors duration-300">
+            Experience
+          </a>
+          <a href="#projects" className="text-white hover:text-cyan-400 active:text-teal-400 transition-colors duration-300">
             Projects
           </a>
-          <a
-            href="#contact"
-            className="text-white hover:text-cyan-400 active:text-teal-400 transition-colors duration-300"
-          >
+          <a href="#achievements" className="text-white hover:text-cyan-400 active:text-teal-400 transition-colors duration-300">
+            Achievements
+          </a>
+          <a href="#contact" className="text-white hover:text-cyan-400 active:text-teal-400 transition-colors duration-300">
             Contact
           </a>
         </div>
