@@ -13,22 +13,21 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="py-24 px-6 bg-gradient-to-b from-gray-50 to-white"
+      className="py-24 px-6 bg-black text-white"
     >
       <div className="max-w-6xl mx-auto">
 
         {/* Heading */}
-        <h2 className="text-3xl font-bold mb-6 text-purple-600 text-center pointer-events-none">
-  Technical Skills
-</h2>
-
+        <h2 className="text-3xl font-bold mb-6 text-cyan-400 text-center pointer-events-none">
+          Technical Skills
+        </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
           {/* Languages */}
           <SkillCard
             title="Languages"
-            color="text-blue-600"
+            color="text-cyan-400"
             icon={<FaJava size={24} />}
             skills={["Java", "C++", "Python", "SQL"]}
           />
@@ -36,7 +35,7 @@ export default function Skills() {
           {/* Web */}
           <SkillCard
             title="Web Technologies"
-            color="text-purple-600"
+            color="text-cyan-400"
             icon={<FaReact size={24} />}
             skills={["React.js", "Node.js", "Express.js", "Tailwind CSS", "MongoDB"]}
           />
@@ -44,7 +43,7 @@ export default function Skills() {
           {/* AI */}
           <SkillCard
             title="AI Tools"
-            color="text-orange-500"
+            color="text-cyan-400"
             icon={<MdOutlinePsychology size={24} />}
             skills={["OpenAI API", "ChatGPT", "Gemini"]}
           />
@@ -52,7 +51,7 @@ export default function Skills() {
           {/* Dev Tools */}
           <SkillCard
             title="Dev Tools"
-            color="text-green-600"
+            color="text-cyan-400"
             icon={<FaGitAlt size={24} />}
             skills={["Git", "GitHub", "AWS", "Firebase", "Linux"]}
           />
@@ -60,9 +59,9 @@ export default function Skills() {
           {/* Core CS */}
           <SkillCard
             title="Core CS"
-            color="text-pink-600"
+            color="text-cyan-400"
             icon={<MdDevices size={24} />}
-            skills={["DSA", "OS", "DBMS", "OOPS", "System Design"]}
+            skills={["DSA", "OS", "DBMS", "OOPS", "Computer Network"]}
           />
         </div>
       </div>
@@ -73,7 +72,7 @@ export default function Skills() {
 /* Reusable Card */
 function SkillCard({ title, color, icon, skills }) {
   return (
-    <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-md">
+    <div className="bg-black/80 border border-cyan-400 rounded-2xl p-6 shadow-sm hover:shadow-md transition duration-300">
 
       <div className={`flex items-center gap-3 mb-4 ${color}`}>
         {icon}
@@ -83,18 +82,17 @@ function SkillCard({ title, color, icon, skills }) {
       <div className="flex flex-wrap gap-3">
         {skills.map((skill, i) => (
           <span
-  key={i}
-  className="
-    px-4 py-1 text-sm font-semibold
-    rounded-full
-    bg-gray-100 text-gray-700
-    hover:bg-purple-600 hover:text-white
-    transition duration-300 cursor-pointer
-  "
->
-  {skill}
-</span>
-
+            key={i}
+            className="
+              px-4 py-1 text-sm font-semibold
+              rounded-full
+              bg-white/10 text-white
+              hover:bg-cyan-400 hover:text-black
+              transition duration-300 cursor-pointer
+            "
+          >
+            {skill}
+          </span>
         ))}
       </div>
     </div>
