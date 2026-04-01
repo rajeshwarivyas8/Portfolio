@@ -8,7 +8,7 @@ export default function Hero() {
 
 {/* Social Left Bar */}
 
-<div className="fixed left-8 bottom-0 hidden md:flex flex-col items-center gap-5 z-50">
+<div className="fixed left-4 bottom-10 flex flex-col items-center gap-4 z-50">
 
 <a 
 href="https://wa.me/917770975743"
