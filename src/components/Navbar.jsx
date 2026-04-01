@@ -1,66 +1,40 @@
-export default function Navbar({ darkMode, setDarkMode }) {
+export default function Navbar() {
   return (
-    <nav className="px-10 py-4 shadow-lg fixed top-0 w-full z-50 
-    bg-[#0b0f19]/90 backdrop-blur-md text-white border-b border-gray-800">
+    <nav className="px-10 py-4 shadow-lg fixed top-0 w-full z-50 bg-black text-white">
+      <div className="flex justify-between items-center">
 
-      <div className="flex justify-end items-center gap-10 font-medium">
+        {/* Left: Logo / RV */}
+        <div className="text-white font-bold text-xl hover:text-cyan-400 active:text-teal-400 transition-colors duration-300 cursor-pointer">
+          RV
+        </div>
 
-        <a href="#home"
-        className="hover:scale-110 transition duration-300 
-        bg-clip-text text-transparent 
-        bg-gradient-to-r from-purple-400 via-pink-500 to-orange-400">
-          Home
-        </a>
+        {/* Center: LinkedIn */}
+        <div className="flex justify-center items-center gap-10 font-medium">
+          <a
+            href="https://www.linkedin.com/in/YOUR_LINKEDIN_ID"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-cyan-400 active:text-teal-400 transition-colors duration-300"
+          >
+            LinkedIn
+          </a>
+        </div>
 
-        <a href="#about"
-        className="hover:scale-110 transition duration-300 
-        bg-clip-text text-transparent 
-        bg-gradient-to-r from-purple-400 via-pink-500 to-orange-400">
-          About
-        </a>
-
-        <a href="#education"
-        className="hover:scale-110 transition duration-300 
-        bg-clip-text text-transparent 
-        bg-gradient-to-r from-purple-400 via-pink-500 to-orange-400">
-          Skills
-        </a>
-
-        <a href="#experience"
-        className="hover:scale-110 transition duration-300 
-        bg-clip-text text-transparent 
-        bg-gradient-to-r from-purple-400 via-pink-500 to-orange-400">
-          Experience
-        </a>
-
-        <a href="#projects"
-        className="hover:scale-110 transition duration-300 
-        bg-clip-text text-transparent 
-        bg-gradient-to-r from-purple-400 via-pink-500 to-orange-400">
-          Projects
-        </a>
-
-        <a href="#achievements"
-        className="hover:scale-110 transition duration-300 
-        bg-clip-text text-transparent 
-        bg-gradient-to-r from-purple-400 via-pink-500 to-orange-400">
-          Achievements
-        </a>
-
-        <a href="#contact"
-        className="hover:scale-110 transition duration-300 
-        bg-clip-text text-transparent 
-        bg-gradient-to-r from-purple-400 via-pink-500 to-orange-400">
-          Contact
-        </a>
-
-        <button
-          onClick={() => setDarkMode(!darkMode)}
-          className="px-5 py-2 rounded-lg 
-          bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 
-          hover:scale-105 transition duration-300 text-white">
-          {darkMode ? "Light" : "Dark"}
-        </button>
+        {/* Right: Extra links (optional) */}
+        <div className="flex items-center gap-6 font-medium">
+          <a
+            href="#projects"
+            className="text-white hover:text-cyan-400 active:text-teal-400 transition-colors duration-300"
+          >
+            Projects
+          </a>
+          <a
+            href="#contact"
+            className="text-white hover:text-cyan-400 active:text-teal-400 transition-colors duration-300"
+          >
+            Contact
+          </a>
+        </div>
 
       </div>
     </nav>
