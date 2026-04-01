@@ -5,16 +5,67 @@ const Hero = () => {
   return (
     <section className="min-h-screen flex flex-col justify-center items-center relative px-6 py-20 animated-bg">
 
+
+      
+
+{/* Social Left Bar */}
+
+<div className="fixed left-8 bottom-0 hidden md:flex flex-col items-center gap-5 z-50">
+
+<a 
+href="https://wa.me/917770975743"
+target="_blank"
+rel="noopener noreferrer"
+className="text-green-500 hover:scale-125 hover:drop-shadow-[0_0_8px_#22c55e] transition duration-300"
+>
+<FaWhatsapp size={26}/>
+</a>
+
+<a 
+href="https://linkedin.com/in/YOUR_LINK"
+target="_blank"
+rel="noopener noreferrer"
+className="text-blue-500 hover:scale-125 hover:drop-shadow-[0_0_8px_#3b82f6] transition duration-300"
+>
+<FaLinkedin size={26}/>
+</a>
+
+<a 
+href="https://github.com/YOUR_LINK"
+target="_blank"
+rel="noopener noreferrer"
+className="text-white hover:text-cyan-400 hover:scale-125 hover:drop-shadow-[0_0_8px_cyan] transition duration-300"
+>
+<FaGithub size={26}/>
+</a>
+
+<a 
+href="mailto:rajeshwarivyas317@gmail.com"
+className="text-red-400 hover:scale-125 hover:drop-shadow-[0_0_8px_#f87171] transition duration-300"
+>
+<MdEmail size={28}/>
+</a>
+
+{/* vertical line */}
+
+<div className="w-[2px] h-24 bg-cyan-400 mt-2"></div>
+
+</div>
+
+
+
+
+
       {/* Heading */}
       <h1 className="text-4xl sm:text-5xl font-bold text-center">
-        <span className="text-cyan-400">Hi 👋 I'm </span>
+        <span className="text-cyan-400">Hello 👋 I'm </span>
         <span className="text-white hover:text-cyan-400 transition-colors duration-300 cursor-pointer">
           Rajeshwari Vyas
         </span>
       </h1>
 
       <h3 className="text-lg sm:text-xl text-center mt-2 text-white">
-        MERN-Stack Software Developer | AI & IoT Enthusiast
+         Software Developer | AI & IoT Enthusiast
       </h3>
 
       {/* Typing SVG */}
