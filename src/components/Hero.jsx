@@ -25,7 +25,7 @@ target="_blank"
 rel="noopener noreferrer"
 className="text-blue-500 hover:scale-125 hover:drop-shadow-[0_0_8px_#3b82f6] transition duration-300"
 >
-<FaLinkedin size={26}/>
+<FaLinkedin size={30}/>
 </a>
 
 <a 
@@ -34,14 +34,14 @@ target="_blank"
 rel="noopener noreferrer"
 className="text-white hover:text-cyan-400 hover:scale-125 hover:drop-shadow-[0_0_8px_cyan] transition duration-300"
 >
-<FaGithub size={26}/>
+<FaGithub size={30}/>
 </a>
 
 <a 
 href="mailto:rajeshwarivyas317@gmail.com"
 className="text-red-400 hover:scale-125 hover:drop-shadow-[0_0_8px_#f87171] transition duration-300"
 >
-<MdEmail size={28}/>
+<MdEmail size={30}/>
 </a>
 
 {/* vertical line */}
@@ -51,29 +51,25 @@ className="text-red-400 hover:scale-125 hover:drop-shadow-[0_0_8px_#f87171] tran
 </div>
 
 
-{/* Hero Content */}
+{/* Heading */}
+      <h1 className="text-4xl sm:text-5xl font-bold text-center">
+        <span className="text-cyan-400">Hi 👋 I'm </span>
+        <span className="text-white hover:text-cyan-400 transition-colors duration-300 cursor-pointer">
+          Rajeshwari Vyas
+        </span>
+      </h1>
 
-<div className="max-w-5xl">
+      <h3 className="text-lg sm:text-xl text-center mt-2 text-white">
+        MERN-Stack Software Developer | AI & IoT Enthusiast
+      </h3>
 
-<h1 className="text-5xl md:text-6xl font-bold leading-tight">
-
-Hi, I'm  
-<span className="text-cyan-400"> Rajeshwari Vyas</span>
-
-</h1>
-
-<p className="mt-6 text-xl text-gray-300">
-
-IoT Engineer | Data Analyst | Software Developer
-
-</p>
-
-<p className="mt-4 text-gray-400 max-w-2xl">
-
-Passionate about building AI solutions, data dashboards,
-and scalable applications.
-
-</p>
+      {/* Typing SVG */}
+      <p className="mt-4">
+        <img
+          src="https://readme-typing-svg.herokuapp.com?color=36BCF7&center=true&vCenter=true&width=520&lines=Full-Stack+Development;AI+%26+IoT+Enthusiast;Building+Scalable+Software+Solutions"
+          alt="Typing effect"
+        />
+      </p>
 
 
 {/* Buttons */}
