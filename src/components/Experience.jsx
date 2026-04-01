@@ -4,156 +4,149 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className="py-24 px-6 bg-gradient-to-b from-white via-purple-50/40 to-orange-50/30"
+      className="py-24 px-6 bg-black text-white"
     >
       <div className="max-w-6xl mx-auto">
 
-        {/* ===== Heading ===== */}
+        {/* Heading */}
         <div className="text-center mb-16">
-          <h2 className="text-sm font-semibold tracking-widest text-purple-600 uppercase">
+          <h2 className="text-sm font-semibold tracking-widest text-cyan-400 uppercase">
             Work Experience
           </h2>
 
-          <h3 className="text-3xl md:text-4xl font-bold mt-2 text-black">
-            Professional <span className="text-orange-500">Experience</span>
+          <h3 className="text-3xl md:text-4xl font-bold mt-2">
+            Professional <span className="text-cyan-400">Experience</span>
           </h3>
 
-          <div className="w-20 h-1 bg-gradient-to-r from-purple-500 to-orange-400 mx-auto mt-4 rounded-full"></div>
+          <div className="w-20 h-1 bg-cyan-400 mx-auto mt-4 rounded-full"></div>
         </div>
 
-        {/* ===== Experience Cards ===== */}
+        {/* Experience Cards */}
         <div className="space-y-10">
 
-          {/* --- Prodigy Infotech --- */}
-          <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow p-8">
+          {/* VaultOfCodes */}
+          <div className="bg-black/80 border border-cyan-400 rounded-2xl shadow-md hover:shadow-cyan-500/20 hover:shadow-xl transition p-8">
+
             <div className="flex flex-col sm:flex-row gap-5">
 
-              <div className="p-3 h-fit rounded-xl bg-gradient-to-br from-purple-500 to-orange-400 text-white">
+              <div className="p-3 h-fit rounded-xl bg-cyan-400 text-black">
                 <Briefcase size={22} />
               </div>
 
               <div>
-                <h4 className="text-xl font-semibold text-purple-600">
-                  Software Developer Intern
-                </h4>
-
-                <p className="text-sm text-black mt-1">
-                  Prodigy Infotech • Present
-                </p>
-
-                <ul className="mt-4 list-disc pl-5 marker:text-orange-400 text-black space-y-2">
-                  <li>
-                    Engineered applications — Number Guessing Engine, Contact Manager,
-                    and Sudoku Solver — using OOP, file handling, and backtracking,
-                    achieving 40% faster execution.
-                  </li>
-                  <li>
-                    Improved code reliability through clean coding practices,
-                    input validation, and Git/GitHub workflows.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          {/* --- VaultOfCodes --- */}
-          <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow p-8">
-            <div className="flex flex-col sm:flex-row gap-5">
-
-              <div className="p-3 h-fit rounded-xl bg-gradient-to-br from-purple-500 to-orange-400 text-white">
-                <Briefcase size={22} />
-              </div>
-
-              <div>
-                <h4 className="text-xl font-semibold text-purple-600">
+                <h4 className="text-xl font-semibold text-cyan-400">
                   Frontend Developer Intern
                 </h4>
 
-                <p className="text-sm text-black mt-1">
+                <p className="text-sm text-gray-300 mt-1">
                   VaultOfCodes • Aug 2025
                 </p>
 
-                <ul className="mt-4 list-disc pl-5 marker:text-orange-400 text-black space-y-2">
+                <ul className="mt-4 list-disc pl-5 marker:text-cyan-400 text-gray-200 space-y-2">
+
                   <li>
                     Integrated REST APIs and developed reusable UI components,
                     improving development efficiency by 30%.
                   </li>
+
                   <li>
                     Wrote clean, scalable, and maintainable frontend code
                     for long-term stability.
                   </li>
+
                 </ul>
+
               </div>
+
             </div>
+
           </div>
 
-          {/* --- IBM SkillsBuild --- */}
-          <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow p-8">
+          {/* IoT Internship */}
+          <div className="bg-black/80 border border-cyan-400 rounded-2xl shadow-md hover:shadow-cyan-500/20 hover:shadow-xl transition p-8">
+
             <div className="flex flex-col sm:flex-row gap-5">
 
-              <div className="p-3 h-fit rounded-xl bg-gradient-to-br from-purple-500 to-orange-400 text-white">
+              <div className="p-3 h-fit rounded-xl bg-cyan-400 text-black">
                 <Briefcase size={22} />
               </div>
 
               <div>
-                <h4 className="text-xl font-semibold text-purple-600">
-                  Artificial Intelligence Intern
-                </h4>
 
-                <p className="text-sm text-black mt-1">
-                  IBM SkillsBuild • July – Aug 2024
-                </p>
-
-                <ul className="mt-4 list-disc pl-5 marker:text-orange-400 text-black space-y-2">
-                  <li>
-                    Worked on Python-based AI projects including chatbot development,
-                    data preprocessing, and model training.
-                  </li>
-                  <li>
-                    Strengthened skills in algorithms, problem-solving,
-                    and AI-driven solution building.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          {/* --- IoT Internship --- */}
-          <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow p-8">
-            <div className="flex flex-col sm:flex-row gap-5">
-
-              <div className="p-3 h-fit rounded-xl bg-gradient-to-br from-purple-500 to-orange-400 text-white">
-                <Briefcase size={22} />
-              </div>
-
-              <div>
-                <h4 className="text-xl font-semibold text-purple-600">
+                <h4 className="text-xl font-semibold text-cyan-400">
                   IoT & Embedded Systems Intern (Onsite)
                 </h4>
 
-                <p className="text-sm text-black mt-1">
+                <p className="text-sm text-gray-300 mt-1">
                   Samrat Ashok Technological Institute, Vidisha • May – June 2025
                 </p>
 
-                <ul className="mt-4 list-disc pl-5 marker:text-orange-400 text-black space-y-2">
+                <ul className="mt-4 list-disc pl-5 marker:text-cyan-400 text-gray-200 space-y-2">
+
                   <li>
-                    Worked with Arduino IDE, embedded systems, MQTT, Blynk,
-                    and ThingSpeak protocols.
+                    Worked with Arduino IDE, embedded systems, MQTT,
+                    Blynk, and ThingSpeak protocols.
                   </li>
+
                   <li>
                     Built 8+ real-time IoT projects including LED control,
-                    visitor counter, sensor-based systems, and home automation.
+                    visitor counter, sensor systems, and home automation.
                   </li>
+
                   <li>
                     Developed robotics projects such as line follower
                     and computer-controlled robots.
                   </li>
+
                 </ul>
+
               </div>
+
             </div>
+
+          </div>
+
+          {/* IBM AI Internship */}
+          <div className="bg-black/80 border border-cyan-400 rounded-2xl shadow-md hover:shadow-cyan-500/20 hover:shadow-xl transition p-8">
+
+            <div className="flex flex-col sm:flex-row gap-5">
+
+              <div className="p-3 h-fit rounded-xl bg-cyan-400 text-black">
+                <Briefcase size={22} />
+              </div>
+
+              <div>
+
+                <h4 className="text-xl font-semibold text-cyan-400">
+                  Artificial Intelligence Intern
+                </h4>
+
+                <p className="text-sm text-gray-300 mt-1">
+                  IBM SkillsBuild • July – Aug 2024
+                </p>
+
+                <ul className="mt-4 list-disc pl-5 marker:text-cyan-400 text-gray-200 space-y-2">
+
+                  <li>
+                    Worked on Python-based AI projects including chatbot development,
+                    data preprocessing, and model training.
+                  </li>
+
+                  <li>
+                    Strengthened skills in algorithms, problem-solving,
+                    and AI-driven solution building.
+                  </li>
+
+                </ul>
+
+              </div>
+
+            </div>
+
           </div>
 
         </div>
+
       </div>
     </section>
   )
