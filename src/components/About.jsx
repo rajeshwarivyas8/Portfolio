@@ -18,9 +18,9 @@ export default function About() {
             <p className="font-semibold text-lg">
               Samrat Ashok Technological Institute
             </p>
-            <p>Bachelor of Technology in Internet of Things</p>
+            <p>Bachelor of Technology in Computer Science & Engineering (Internet of Things)</p>
             <p>2022 – 2026 | Vidisha, M.P, India</p>
-            <p className="font-medium">CGPA: 7.58 / 10.0</p>
+            <p className="font-medium">CGPA: 7.63 / 10.0</p>
           </div>
         </div>
       </div>
