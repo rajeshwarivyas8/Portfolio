@@ -3,7 +3,23 @@ import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center relative px-6 py-20 bg-black">
+    <section
+      className="min-h-screen flex flex-col justify-center items-center relative px-6 py-20 text-white"
+      style={{
+        background: "linear-gradient(-45deg, #000000, #0ff, #0088ff, #000000)",
+        backgroundSize: "400% 400%",
+        animation: "holiGradient 15s ease infinite",
+      }}
+    >
+      <style>
+        {`
+          @keyframes holiGradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+          }
+        `}
+      </style>
 
       {/* Text Content */}
       <div className="text-center space-y-6">
