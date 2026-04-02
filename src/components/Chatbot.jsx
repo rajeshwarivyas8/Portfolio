@@ -76,7 +76,7 @@ function Chatbot() {
       >
         <img
           src="https://cdn-icons-png.flaticon.com/512/4712/4712027.png"
-          style={{ width: "45px" }}
+          style={{ width: "55px" }}
         />
       </div>
 
