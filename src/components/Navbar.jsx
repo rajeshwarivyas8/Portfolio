@@ -1,58 +1,50 @@
-export default function Navbar({ darkMode, setDarkMode }) {
+export default function Navbar() {
   return (
-    <nav className="px-6 py-4 shadow-md fixed top-0 w-full z-50 bg-white text-black">
-      <div className="flex justify-center items-center gap-8 font-semibold">
-        <a
-          href="#home"
-          className="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 hover:from-orange-500 hover:via-pink-500 hover:to-purple-500 transition-colors font-semibold"
-        >
-          Home
-        </a>
-        <a
-          href="#about"
-          className="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 hover:from-orange-500 hover:via-pink-500 hover:to-purple-500 transition-colors font-semibold"
-        >
-          About
-        </a>
-        <a
-          href="#education"
-          className="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 hover:from-orange-500 hover:via-pink-500 hover:to-purple-500 transition-colors font-semibold"
-        >
-          
-          Skills
-        </a>
-        <a
-          href="#experience"
-          className="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 hover:from-orange-500 hover:via-pink-500 hover:to-purple-500 transition-colors font-semibold"
-        >
-          Experience
-        </a>
-        <a
-          href="#projects"
-          className="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 hover:from-orange-500 hover:via-pink-500 hover:to-purple-500 transition-colors font-semibold"
-        >
-          Projects
-        </a>
-        <a
-          href="#achievements"
-          className="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 hover:from-orange-500 hover:via-pink-500 hover:to-purple-500 transition-colors font-semibold"
-        >
-          Achievements
-        </a>
-        <a
-          href="#contact"
-          className="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 hover:from-orange-500 hover:via-pink-500 hover:to-purple-500 transition-colors font-semibold"
-        >
-          Contact
-        </a>
+    <nav className="px-10 py-4 shadow-lg fixed top-0 w-full z-50 bg-black text-white">
+      <div className="flex justify-between items-center">
 
-        {/* Toggle Button */}
-        <button
-          onClick={() => setDarkMode(!darkMode)}
-          className="px-6 py-3 bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 hover:from-orange-500 hover:via-pink-500 hover:to-purple-500 text-white font-semibold rounded-md transition-colors ml-6"
-        >
-          {darkMode ? "Light Mode" : "Dark Mode"}
-        </button>
+        {/* Left: Logo / RV */}
+        <div className="text-white font-bold text-xl hover:text-cyan-400 active:text-teal-400 transition-colors duration-300 cursor-pointer">
+          RV
+        </div>
+
+        {/* Center: LinkedIn */}
+        <div className="flex justify-center items-center gap-10 font-medium">
+          <a
+            href="https://www.linkedin.com/in/rajeshwarivyas/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-cyan-400 active:text-teal-400 transition-colors duration-300"
+          >
+            https://www.linkedin.com/in/rajeshwarivyas/
+          </a>
+        </div>
+
+        {/* Right: Navbar Links */}
+        <div className="flex items-center gap-6 font-medium">
+          <a href="#home" className="text-white hover:text-cyan-400 active:text-teal-400 transition-colors duration-300">
+            Home
+          </a>
+          <a href="#about" className="text-white hover:text-cyan-400 active:text-teal-400 transition-colors duration-300">
+            About
+          </a>
+          <a href="#education" className="text-white hover:text-cyan-400 active:text-teal-400 transition-colors duration-300">
+            Skills
+          </a>
+          <a href="#experience" className="text-white hover:text-cyan-400 active:text-teal-400 transition-colors duration-300">
+            Experience
+          </a>
+          <a href="#projects" className="text-white hover:text-cyan-400 active:text-teal-400 transition-colors duration-300">
+            Projects
+          </a>
+          <a href="#achievements" className="text-white hover:text-cyan-400 active:text-teal-400 transition-colors duration-300">
+            Achievements
+          </a>
+          <a href="#contact" className="text-white hover:text-cyan-400 active:text-teal-400 transition-colors duration-300">
+            Contact
+          </a>
+        </div>
+
       </div>
     </nav>
   )
