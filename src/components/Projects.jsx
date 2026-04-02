@@ -2,102 +2,178 @@ import React from "react";
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-24 px-6 bg-white">
+    <section id="projects" className="py-24 px-6 bg-black text-white">
       <div className="max-w-6xl mx-auto">
-        {/* ===== Heading ===== */}
+
+        {/* Heading */}
         <div className="text-center mb-16">
-          <h2 className="text-sm font-semibold tracking-widest text-purple-600 uppercase">
+
+          <h2 className="text-sm font-semibold tracking-widest text-cyan-400 uppercase">
             Portfolio
           </h2>
 
-          <h3 className="text-3xl md:text-4xl font-bold mt-2 text-black">
-            Featured <span className="text-orange-500">Projects</span>
+          <h3 className="text-3xl md:text-4xl font-bold mt-2">
+            Featured <span className="text-cyan-400">Projects</span>
           </h3>
 
-          <div className="w-20 h-1 bg-gradient-to-r from-purple-500 to-orange-400 mx-auto mt-4 rounded-full"></div>
+          <div className="w-20 h-1 bg-cyan-400 mx-auto mt-4 rounded-full"></div>
+
         </div>
 
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
+
           {/* Project 1 */}
-          <div className="border border-gray-200 p-6 rounded-xl shadow hover:shadow-lg transition-shadow duration-300">
-            <h3 className="text-xl font-semibold mb-2 text-purple-500 cursor-pointer">
-              Blog Application
+          <div className="bg-black/80 border border-cyan-400 p-6 rounded-xl shadow hover:shadow-cyan-500/20 hover:shadow-xl transition duration-300">
+
+            <h3 className="text-xl font-semibold mb-3 text-cyan-400">
+              AI Resume Builder
             </h3>
-            <p className="text-black mb-4">
-              Full-featured blog platform with CRUD functionality, user authentication, blog ratings, and real-time Firestore updates with responsive design.
+
+            <p className="text-gray-300 mb-4 text-sm">
+              Built a full-stack AI Resume Builder using React.js,
+              Node.js, Javascript, and MongoDB with secure user
+              authentication and resume management features.
             </p>
+
+            <p className="text-gray-400 mb-4 text-sm">
+              Implemented dynamic resume creation with live preview,
+              shareable links, multiple templates, and image upload
+              with background removal.
+            </p>
+
             <div className="flex flex-wrap gap-2 mb-4">
-              <span className="bg-gray-100 text-black px-2 py-1 rounded">React.js</span>
-              <span className="bg-gray-100 text-black px-2 py-1 rounded">Firebase</span>
-              <span className="bg-gray-100 text-black px-2 py-1 rounded">Tailwind CSS</span>
-              <span className="bg-gray-100 text-black px-2 py-1 rounded">CRUD</span>
-              <span className="bg-gray-100 text-black px-2 py-1 rounded">User Auth</span>
-              <span className="bg-gray-100 text-black px-2 py-1 rounded">Blog ratings</span>
+
+              <span className="bg-white/10 px-3 py-1 rounded text-sm">
+                React.js
+              </span>
+
+              <span className="bg-white/10 px-3 py-1 rounded text-sm">
+                Node.js
+              </span>
+
+              <span className="bg-white/10 px-3 py-1 rounded text-sm">
+                MongoDB
+              </span>
+
+              <span className="bg-white/10 px-3 py-1 rounded text-sm">
+                ChatGPT API
+              </span>
+
             </div>
+
             <div className="flex gap-4">
-              <a href="#" className="text-orange-500 hover:underline flex items-center gap-1">
-                <i className="fab fa-github"></i> Code
+
+              <a href="https://github.com/rajeshwarivyas8/resume-frontend" className="text-cyan-400 hover:underline">
+                Code
               </a>
-              <a href="#" className="text-orange-500 hover:underline flex items-center gap-1">
-                <i className="fas fa-external-link-alt"></i> Live
+
+              <a href="https://resumevita.vercel.app/" className="text-cyan-400 hover:underline">
+                Live
               </a>
+
             </div>
+
           </div>
 
           {/* Project 2 */}
-          <div className="border border-gray-200 p-6 rounded-xl shadow hover:shadow-lg transition-shadow duration-300">
-            <h3 className="text-xl font-semibold mb-2 text-purple-500 cursor-pointer">
-              Realtime Chat Application
+          <div className="bg-black/80 border border-cyan-400 p-6 rounded-xl shadow hover:shadow-cyan-500/20 hover:shadow-xl transition duration-300">
+
+            <h3 className="text-xl font-semibold mb-3 text-cyan-400">
+              Personal Portfolio Website
             </h3>
-            <p className="text-black mb-4">
-              Feature-rich chat app supporting 1:1 and group conversations with 30% reduced message latency and optimized React components.
+
+            <p className="text-gray-300 mb-4 text-sm">
+              Built a responsive personal portfolio using React.js
+              showcasing projects, skills, and professional details.
             </p>
+
+            <p className="text-gray-400 mb-4 text-sm">
+              Implemented reusable React components and deployed
+              using GitHub and Vercel.
+            </p>
+
             <div className="flex flex-wrap gap-2 mb-4">
-              <span className="bg-gray-100 text-black px-2 py-1 rounded">MongoDB</span>
-              <span className="bg-gray-100 text-black px-2 py-1 rounded">Express.js</span>
-              <span className="bg-gray-100 text-black px-2 py-1 rounded">React.js</span>
-              <span className="bg-gray-100 text-black px-2 py-1 rounded">Node.js</span>
-              <span className="bg-gray-100 text-black px-2 py-1 rounded">Socket.io</span>
+
+              <span className="bg-white/10 px-3 py-1 rounded text-sm">
+                React.js
+              </span>
+
+              <span className="bg-white/10 px-3 py-1 rounded text-sm">
+                JavaScript
+              </span>
+
+              <span className="bg-white/10 px-3 py-1 rounded text-sm">
+                CSS
+              </span>
+
             </div>
+
             <div className="flex gap-4">
-              <a href="#" className="text-orange-500 hover:underline flex items-center gap-1">
-                <i className="fab fa-github"></i> Code
+
+              <a href="https://github.com/rajeshwarivyas8/Portfolio" className="text-cyan-400 hover:underline">
+                Code
               </a>
-              <a href="#" className="text-orange-500 hover:underline flex items-center gap-1">
-                <i className="fas fa-external-link-alt"></i> Live
+
+              <a href="https://rajeshwari-portfolio-vyas.vercel.app/" className="text-cyan-400 hover:underline">
+                Live
               </a>
+
             </div>
+
           </div>
 
           {/* Project 3 */}
-          <div className="border border-gray-200 p-6 rounded-xl shadow hover:shadow-lg transition-shadow duration-300">
-            <h3 className="text-xl font-semibold mb-2 text-purple-500 cursor-pointer">
-              To-Do Application
+          <div className="bg-black/80 border border-cyan-400 p-6 rounded-xl shadow hover:shadow-cyan-500/20 hover:shadow-xl transition duration-300">
+
+            <h3 className="text-xl font-semibold mb-3 text-cyan-400">
+              Book Inventory Management App
             </h3>
-            <p className="text-black mb-4">
-              Clean and maintainable task management app with full CRUD operations, local storage persistence for offline access, and responsive design.
+
+            <p className="text-gray-300 mb-4 text-sm">
+              Developed a responsive Book Inventory Management web
+              application using React, HTML, CSS, and JavaScript.
             </p>
+
+            <p className="text-gray-400 mb-4 text-sm">
+              Managed application state using React Hooks like
+              useState and useEffect.
+            </p>
+
             <div className="flex flex-wrap gap-2 mb-4">
-              <span className="bg-gray-100 text-black px-2 py-1 rounded">HTML</span>
-              <span className="bg-gray-100 text-black px-2 py-1 rounded">CSS</span>
-              <span className="bg-gray-100 text-black px-2 py-1 rounded">JavaScript</span>
-              <span className="bg-gray-100 text-black px-2 py-1 rounded">CRUD</span>
-              <span className="bg-gray-100 text-black px-2 py-1 rounded">Local Storage</span>
+
+              <span className="bg-white/10 px-3 py-1 rounded text-sm">
+                React
+              </span>
+
+              <span className="bg-white/10 px-3 py-1 rounded text-sm">
+                Firebase
+              </span>
+
+              <span className="bg-white/10 px-3 py-1 rounded text-sm">
+                JavaScript
+              </span>
+
             </div>
+
             <div className="flex gap-4">
-              <a href="#" className="text-orange-500 hover:underline flex items-center gap-1">
-                <i className="fab fa-github"></i> Code
+
+              <a href="https://github.com/rajeshwarivyas8/Book-inventory-Management-System" className="text-cyan-400 hover:underline">
+                Code
               </a>
-              <a href="#" className="text-orange-500 hover:underline flex items-center gap-1">
-                <i className="fas fa-external-link-alt"></i> Live
+
+              <a href="https://book-inventory-management-system-pearl.vercel.app/" className="text-cyan-400 hover:underline">
+                Live
               </a>
+
             </div>
+
           </div>
+
         </div>
+
       </div>
     </section>
   );
 };
 
 export default Projects;
-

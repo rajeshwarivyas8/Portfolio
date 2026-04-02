@@ -1,80 +1,117 @@
-import React from "react";
-import RajeshwariPhoto from "../assets/tukk1.jpg"; // your photo path
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaWhatsapp, FaLinkedin, FaGithub } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
-const Hero = () => {
+export default function Hero() {
   return (
-    <section className="min-h-screen bg-white flex flex-col justify-center items-center relative px-6 py-20">
-      {/* Photo */}
-      <div className="mb-10">
-        <img
-          src={RajeshwariPhoto}
-          alt="Rajeshwari Vyas"
-          className="w-48 h-48 sm:w-56 sm:h-56 rounded-full object-cover border-4 border-purple-500"
-        />
-      </div>
 
-      {/* Text Content */}
-      <div className="text-center space-y-6">
-       <h1 className="text-4xl sm:text-5xl font-bold">
-  <span className="text-black">Hi, I'm </span>
-  <span className="bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400 bg-clip-text text-transparent">
-    Rajeshwari Vyas
-  </span>
+<section className="min-h-screen bg-black text-white flex items-center px-10 relative">
+
+{/* Social Left Bar */}
+
+<div className="fixed left-4 bottom-10 flex flex-col items-center gap-4 z-50">
+
+<a 
+href="https://wa.me/917770975743"
+target="_blank"
+rel="noopener noreferrer"
+className="text-green-500 hover:scale-125 hover:drop-shadow-[0_0_8px_#22c55e] transition duration-300"
+>
+<FaWhatsapp size={30}/>
+</a>
+
+<a 
+href="https://linkedin.com/in/YOUR_LINK"
+target="_blank"
+rel="noopener noreferrer"
+className="text-blue-500 hover:scale-125 transition duration-300"
+>
+<FaLinkedin size={30}/>
+</a>
+
+<a 
+href="https://github.com/YOUR_LINK"
+target="_blank"
+rel="noopener noreferrer"
+className="text-white hover:text-cyan-400 hover:scale-125 transition duration-300"
+>
+<FaGithub size={30}/>
+</a>
+
+<a 
+href="mailto:rajeshwarivyas317@gmail.com"
+className="text-red-400 hover:scale-125 transition duration-300"
+>
+<MdEmail size={30}/>
+</a>
+
+<div className="w-[2px] h-24 bg-cyan-400 mt-2"></div>
+
+</div>
+
+
+{/* Hero Content Wrapper */}
+
+<div className="md:ml-24 lg:ml-32 max-w-3xl">
+
+{/* Heading */}
+
+<h1 className="text-4xl sm:text-5xl font-bold text-center md:text-left">
+
+<span className="text-cyan-400">
+Hello 👋 I'm
+</span>
+
+<span className="text-white hover:text-cyan-400 transition ml-2">
+Rajeshwari Vyas
+</span>
+
 </h1>
 
-        <p className="text-lg sm:text-xl text-black">
-          Full-stack Developer • AI & IoT
-        </p>
-        <p className="text-md sm:text-lg text-black max-w-xl mx-auto">
-          Building efficient, scalable, and AI-driven applications
-        </p>
 
-        {/* Buttons */}
-        <div className="flex flex-col sm:flex-row justify-center gap-4 mt-4">
-          <a
-            href="/assets/Rajeshwari_Resume.pdf" // your resume path
-            download
-            className="px-6 py-3 bg-purple-500 hover:bg-purple-600 text-white font-semibold rounded-md transition-colors"
-          >
-            Download Resume
-          </a>
-          <a
-            href="#contact"
-            className="px-6 py-3 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-md transition-colors"
-          >
-            Hire Me
-          </a>
-        </div>
+{/* Subheading */}
 
-        {/* Social Icons */}
-        <div className="flex justify-center gap-6 mt-6 text-gray-700">
-          <a
-            href="https://github.com/yourusername"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-purple-500 transition-colors text-2xl"
-          >
-            <FaGithub />
-          </a>
-          <a
-            href="https://linkedin.com/in/yourusername"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-purple-500 transition-colors text-2xl"
-          >
-            <FaLinkedin />
-          </a>
-          <a
-            href="mailto:rajeshwarivyas317@gmail.com"
-            className="hover:text-purple-500 transition-colors text-2xl"
-          >
-            <FaEnvelope />
-          </a>
-        </div>
-      </div>
-    </section>
+<h3 className="text-lg sm:text-xl mt-3 text-white text-center md:text-left">
+
+Software Developer | AI & IoT Enthusiast
+
+</h3>
+
+
+{/* Typing SVG */}
+
+<div className="mt-4 flex justify-center md:justify-start">
+
+<img
+src="https://readme-typing-svg.herokuapp.com?color=36BCF7&center=true&vCenter=true&width=520&lines=Full-Stack+Development;AI+%26+IoT+Enthusiast;Building+Scalable+Software+Solutions"
+alt="Typing effect"
+/>
+
+</div>
+
+
+{/* Buttons (moved inside same div) */}
+
+<div className="mt-8 flex gap-5 justify-center md:justify-start">
+
+<a
+href="/resume.pdf"
+className="bg-cyan-400 text-black px-8 py-3 rounded-full font-medium hover:bg-cyan-300 transition"
+>
+Download Resume
+</a>
+
+<a
+href="#contact"
+className="border border-cyan-400 text-cyan-400 px-8 py-3 rounded-full hover:bg-cyan-400 hover:text-black transition"
+>
+Hire Me
+</a>
+
+</div>
+
+</div>
+
+</section>
+
   );
-};
-
-export default Hero;
+}
