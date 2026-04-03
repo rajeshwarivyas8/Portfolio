@@ -54,32 +54,55 @@ function Chatbot() {
   };
 
   return (
-    <div>
-      {/* Floating Button */}
-      <div
-        onClick={() => setOpen(!open)}
-        style={{
-          position: "fixed",
-          bottom: "25px",
-          right: "25px",
-          background: "linear-gradient(135deg,#06b6d4,#3b82f6)",
-          width: "95px",
-          height: "95px",
-          borderRadius: "50%",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          cursor: "pointer",
-          boxShadow: "0 0 30px rgba(6,182,212,0.8)",
-          transition: "0.3s",
-        }}
-      >
-        <img
-          src="https://cdn-icons-png.flaticon.com/512/4712/4712027.png"
-          style={{ width: "75px" }}
-        />
-      </div>
+   <div>
+  <div
+    onClick={() => setOpen(!open)}
+    style={{
+      position: "fixed",
+      bottom: "25px",
+      right: "25px",
+      background: "linear-gradient(135deg,#06b6d4,#3b82f6)",
+      width: "95px",
+      height: "95px",
+      borderRadius: "50%",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      cursor: "pointer",
+      boxShadow: "0 0 30px rgba(6,182,212,0.8)",
+      transition: "all 0.3s ease",
+      
+      /* Alive feeling */
+      animation: "float 3s ease-in-out infinite"
+    }}
+    
+    onMouseEnter={(e)=>{
+      e.currentTarget.style.transform="scale(1.1)"
+    }}
 
+    onMouseLeave={(e)=>{
+      e.currentTarget.style.transform="scale(1)"
+    }}
+
+  >
+    <img
+      src="https://cdn-icons-png.flaticon.com/512/4712/4712027.png"
+      style={{ width: "75px" }}
+    />
+  </div>
+
+  {/* animation yahi same file me */}
+  <style>
+    {`
+      @keyframes float {
+        0%{ transform: translateY(0px);}
+        50%{ transform: translateY(-12px);}
+        100%{ transform: translateY(0px);}
+      }
+    `}
+  </style>
+
+</div>
       {/* Chat Window */}
       {open && (
         <div
