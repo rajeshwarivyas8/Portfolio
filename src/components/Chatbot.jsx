@@ -70,18 +70,15 @@ function Chatbot() {
       justifyContent: "center",
       cursor: "pointer",
       boxShadow: "0 0 30px rgba(6,182,212,0.8)",
-      transition: "all 0.3s ease",
-      
-      /* Alive feeling */
-      animation: "float 3s ease-in-out infinite"
+      transition: "0.3s",
     }}
-    
+
     onMouseEnter={(e)=>{
-      e.currentTarget.style.transform="scale(1.1)"
+      e.currentTarget.style.transform="scale(1.1) translateY(-5px)"
     }}
 
     onMouseLeave={(e)=>{
-      e.currentTarget.style.transform="scale(1)"
+      e.currentTarget.style.transform="scale(1) translateY(0px)"
     }}
 
   >
@@ -90,18 +87,6 @@ function Chatbot() {
       style={{ width: "75px" }}
     />
   </div>
-
-  {/* animation yahi same file me */}
-  <style>
-    {`
-      @keyframes float {
-        0%{ transform: translateY(0px);}
-        50%{ transform: translateY(-12px);}
-        100%{ transform: translateY(0px);}
-      }
-    `}
-  </style>
-
 </div>
       {/* Chat Window */}
       {open && (
