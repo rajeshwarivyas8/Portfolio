@@ -54,40 +54,31 @@ function Chatbot() {
   };
 
   return (
-   <div>
-  <div
-    onClick={() => setOpen(!open)}
-    style={{
-      position: "fixed",
-      bottom: "25px",
-      right: "25px",
-      background: "linear-gradient(135deg,#06b6d4,#3b82f6)",
-      width: "95px",
-      height: "95px",
-      borderRadius: "50%",
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "center",
-      cursor: "pointer",
-      boxShadow: "0 0 30px rgba(6,182,212,0.8)",
-      transition: "0.3s",
-    }}
-
-    onMouseEnter={(e)=>{
-      e.currentTarget.style.transform="scale(1.1) translateY(-5px)"
-    }}
-
-    onMouseLeave={(e)=>{
-      e.currentTarget.style.transform="scale(1) translateY(0px)"
-    }}
-
-  >
-    <img
-      src="https://cdn-icons-png.flaticon.com/512/4712/4712027.png"
-      style={{ width: "75px" }}
-    />
-  </div>
-</div>
+  <div>
+      {/* Floating Button */}
+      <div
+        onClick={() => setOpen(!open)}
+        style={{
+          position: "fixed",
+          bottom: "25px",
+          right: "25px",
+          background: "linear-gradient(135deg,#06b6d4,#3b82f6)",
+          width: "95px",
+          height: "95px",
+          borderRadius: "50%",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          cursor: "pointer",
+          boxShadow: "0 0 30px rgba(6,182,212,0.8)",
+          transition: "0.3s",
+        }}
+      >
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/4712/4712027.png"
+          style={{ width: "75px" }}
+        />
+      </div>
       {/* Chat Window */}
       {open && (
         <div
