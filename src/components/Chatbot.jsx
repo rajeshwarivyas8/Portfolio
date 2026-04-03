@@ -63,8 +63,8 @@ function Chatbot() {
           bottom: "25px",
           right: "25px",
           background: "linear-gradient(135deg,#06b6d4,#3b82f6)",
-          width: "75px",
-          height: "75px",
+          width: "95px",
+          height: "95px",
           borderRadius: "50%",
           display: "flex",
           alignItems: "center",
@@ -76,7 +76,7 @@ function Chatbot() {
       >
         <img
           src="https://cdn-icons-png.flaticon.com/512/4712/4712027.png"
-          style={{ width: "55px" }}
+          style={{ width: "75px" }}
         />
       </div>
 
